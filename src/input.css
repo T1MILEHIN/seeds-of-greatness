@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  max-width: 100vw;
+}
+
 section, div, form {
   overflow: hidden;
 }
