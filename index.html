@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seed of Greatness</title>
     <script src="https://kit.fontawesome.com/0a85dbbf01.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/output.css">
 </head>
+
 <body>
     <header class="fixed w-full top-0 right-0 left-0 z-40 bg-black md:px-20 px-4 py-4">
         <div class="flex items-center justify-between">
             <div class="flex-1 flex items-center">
                 <div class="flex-1 border-r border-white">
-                    <img src="./assets/images/logo.png" alt="" class="w-28">
+                    <img src="./assets/images/logo.png" alt="" class="w-20 md:w-28">
                 </div>
-                <div class="flex-[2] flex justify-center">
+                <div class="flex-[2] hidden md:flex justify-center">
                     <nav>
                         <ul class="flex text-sm items-center gap-4 text-white font-semibold">
                             <li>HOME</li>
@@ -25,7 +28,7 @@
                     </nav>
                 </div>
             </div>
-            <div class="flex-1 flex justify-end">
+            <div class="flex-1 hidden md:flex justify-end">
                 <button class="md:px-4 py-2 px-3 bg-primary font-bold text-white rounded-md">Register Now</button>
             </div>
         </div>
@@ -36,7 +39,8 @@
             <div class="flex flex-col gap-6 text-white">
                 <p class="condensed text-base">Welcome to Our Church</p>
                 <h1 class="font-bold md:text-6xl md:w-[300px]">SEEDS OF GREATNESS</h1>
-                <button class="w-fit text-primary bg-white md:px-16 py-6 px-3 rounded-xl font-semibold">REGISTER NOW</button>
+                <button class="w-fit text-primary bg-white md:px-16 py-6 px-3 rounded-xl font-semibold">REGISTER
+                    NOW</button>
             </div>
             <p class="condensed text-white">Possibility Power Conference 2024</p>
         </div>
@@ -80,21 +84,24 @@
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <h2 class="font-bold md:text-2xl">ABOUT US</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="flex flex-col gap-2 px-16 py-10 bg-[#fdebff] border-b-[10px] border-primary">
                 <div>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <h2 class="font-bold md:text-2xl">GET INVOLVED</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="flex flex-col gap-2 px-16 py-10 bg-[#fdebff] border-b-[10px] border-primary">
                 <div>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <h2 class="font-bold md:text-2xl">SHOWING LOVE</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
     </section>
@@ -104,21 +111,61 @@
             <div class="mx-auto md:w-[700px] text-center flex flex-col gap-4">
                 <p class="condensed uppercase text-sm">sub-headline</p>
                 <h1 class="text-5xl uppercase font-bold">why attend?</h1>
-                <p class="text-sm">Join us at RCCG Higher Ground Assembly’s Possibility Power Conference, a transformative event running for over 15 years. Experience profound spiritual growth through impactful teachings, dynamic worship, and powerful prayers. Connect with a vibrant community and gain tools to unlock your God-given potential. Don’t miss this life-changing opportunity!.</p>
+                <p class="text-sm">Join us at RCCG Higher Ground Assembly’s Possibility Power Conference, a
+                    transformative event running for over 15 years. Experience profound spiritual growth through
+                    impactful teachings, dynamic worship, and powerful prayers. Connect with a vibrant community and
+                    gain tools to unlock your God-given potential. Don’t miss this life-changing opportunity!.</p>
             </div>
             <div class="flex flex-col items-center gap-6">
                 <div class="mx-auto lg:w-[900px] w-full h-[500px] bg-black flex justify-center items-center text-white">
                     <p>Video</p>
                 </div>
                 <div class="">
-                    <button class="condensed md:px-4 py-2 px-3 bg-primary font-normal text-white rounded-md">Register Now</button>
+                    <button class="condensed md:px-4 py-2 px-3 bg-primary font-normal text-white rounded-md">Register
+                        Now</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        
+    <section class="md:px-20 md:py-20 py-10 px-4">
+        <div class="text-center flex flex-col gap-4 text-white">
+            <p class="condensed uppercase text-sm">upcoming sermons</p>
+            <h1 class="text-5xl uppercase font-bold">join us and become part of something great</h1>
+        </div>
+
+        <section class="splide" aria-label="sermon slider">
+            <div class="relative splide__track">
+                <ul class="splide__list md:min-h-screen min-h-[200px] flex text-center cursor-grab">
+                    <li class="text-black splide__slide flex justify-center items-center">
+                        ONE
+                    </li>
+                    <li class="text-black splide__slide flex justify-center items-center">
+                        TWO
+                    </li>
+                    <li class="text-black splide__slide flex justify-center items-center">
+                        THREE
+                    </li>
+                </ul>
+                <div class="absolute inset-0 w-full splide__arrows">
+                    <button class="absolute left-0 top-1/2 -translate-y-1/2 splide__arrow--prev text-3xl text-black">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2 splide__arrow--next text-3xl text-black">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
     </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let splide = new Splide('.splide');
+            splide.mount();
+        });
+    </script>
 </body>
+
 </html>
