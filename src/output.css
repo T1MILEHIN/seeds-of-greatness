@@ -580,8 +580,22 @@ video {
   z-index: 40;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex{
   display: flex;
+}
+
+.h-\[500px\]{
+  height: 500px;
 }
 
 .min-h-screen{
@@ -613,6 +627,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -629,6 +647,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -641,12 +663,12 @@ video {
   gap: 1.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
+.gap-8{
+  gap: 2rem;
 }
 
-.gap-16{
-  gap: 4rem;
+.rounded-2xl{
+  border-radius: 1rem;
 }
 
 .rounded-md{
@@ -657,16 +679,21 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-2xl{
-  border-radius: 1rem;
-}
-
 .border{
   border-width: 1px;
 }
 
+.border-b-\[10px\]{
+  border-bottom-width: 10px;
+}
+
 .border-r{
   border-right-width: 1px;
+}
+
+.border-primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(132 34 129 / var(--tw-border-opacity));
 }
 
 .border-white{
@@ -674,9 +701,19 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-primary{
-  --tw-border-opacity: 1;
-  border-color: rgb(132 34 129 / var(--tw-border-opacity));
+.bg-\[\#d4b2d3\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 178 211 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ece9e9\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 233 233 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fdebff\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 235 255 / var(--tw-bg-opacity));
 }
 
 .bg-black{
@@ -694,13 +731,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#ece9e9\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 233 233 / var(--tw-bg-opacity));
-}
-
 .p-6{
   padding: 1.5rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-3{
@@ -711,6 +748,11 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-16{
@@ -733,16 +775,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -752,9 +784,19 @@ video {
   text-align: center;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-base{
@@ -767,21 +809,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -790,20 +817,20 @@ video {
   font-weight: 300;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-medium{
   font-weight: 500;
 }
 
-.uppercase{
-  text-transform: uppercase;
+.font-semibold{
+  font-weight: 600;
 }
 
-.capitalize{
-  text-transform: capitalize;
+.font-normal{
+  font-weight: 400;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .text-primary{
@@ -838,20 +865,25 @@ section.landing::after {
 }
 
 @media (min-width: 768px){
+  .md\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .md\:w-\[300px\]{
     width: 300px;
   }
 
-  .md\:w-\[\]{
-    width: ;
-  }
-
-  .md\:w-\[500px\]{
-    width: 500px;
-  }
-
   .md\:w-\[400px\]{
     width: 400px;
+  }
+
+  .md\:w-\[700px\]{
+    width: 700px;
+  }
+
+  .md\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 
   .md\:px-16{
@@ -874,6 +906,11 @@ section.landing::after {
     padding-bottom: 5rem;
   }
 
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pb-10{
     padding-bottom: 2.5rem;
   }
@@ -882,8 +919,23 @@ section.landing::after {
     padding-top: 5rem;
   }
 
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:w-\[700px\]{
+    width: 700px;
+  }
+
+  .lg\:w-\[900px\]{
+    width: 900px;
   }
 }
