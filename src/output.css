@@ -675,10 +675,6 @@ video {
   flex-wrap: wrap;
 }
 
-.place-items-center{
-  place-items: center;
-}
-
 .items-start{
   align-items: flex-start;
 }
@@ -731,24 +727,16 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-\[30px\]{
+  border-radius: 30px;
+}
+
 .rounded-md{
   border-radius: 0.375rem;
 }
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.rounded{
-  border-radius: 0.25rem;
-}
-
-.rounded-\[\]{
-  border-radius: ;
-}
-
-.rounded-\[30px\]{
-  border-radius: 30px;
 }
 
 .border{
@@ -817,6 +805,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -862,6 +854,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-48{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -879,11 +876,6 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base{
@@ -971,10 +963,18 @@ section.landing::after {
   background-color: rgba(0, 0, 0, 0.568);
 }
 
-@media (min-width: 640px){
-  .sm\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.contact-section {
+  position: relative;
+  background-image: url(../assets/images/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-section::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #250724bb;
 }
 
 @media (min-width: 768px){
@@ -1007,6 +1007,10 @@ section.landing::after {
     width: 400px;
   }
 
+  .md\:w-\[500px\]{
+    width: 500px;
+  }
+
   .md\:w-\[700px\]{
     width: 700px;
   }
@@ -1015,8 +1019,16 @@ section.landing::after {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:flex-nowrap{
     flex-wrap: nowrap;
+  }
+
+  .md\:items-center{
+    align-items: center;
   }
 
   .md\:gap-6{
@@ -1025,6 +1037,10 @@ section.landing::after {
 
   .md\:border-r{
     border-right-width: 1px;
+  }
+
+  .md\:p-16{
+    padding: 4rem;
   }
 
   .md\:px-16{
@@ -1060,6 +1076,11 @@ section.landing::after {
   .md\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .md\:py-32{

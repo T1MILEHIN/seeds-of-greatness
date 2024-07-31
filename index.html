@@ -76,7 +76,7 @@
     <section class="md:py-10 py-5 bg-[#d4b2d3]">
         <div class="text-center flex flex-col gap-4 text-white">
             <p class="condensed uppercase text-sm">sub-headline</p>
-            <h1 class="text-5xl uppercase font-bold">a church that's relevant</h1>
+            <h1 class="text-3xl md:text-5xl uppercase font-bold">a church that's relevant</h1>
         </div>
         <div class="flex flex-wrap md:flex-nowrap items-center gap-8 md:px-20 px-4 md:my-16 my-8">
             <div class="flex flex-col gap-2 px-16 py-10 bg-[#fdebff] border-b-[10px] border-primary">
@@ -110,7 +110,7 @@
         <div class="flex flex-col gap-4">
             <div class="mx-auto md:w-[700px] text-center flex flex-col gap-4">
                 <p class="condensed uppercase text-sm">sub-headline</p>
-                <h1 class="text-5xl uppercase font-bold">why attend?</h1>
+                <h1 class="text-3xl md:text-5xl uppercase font-bold">why attend?</h1>
                 <p class="text-sm">Join us at RCCG Higher Ground Assembly’s Possibility Power Conference, a
                     transformative event running for over 15 years. Experience profound spiritual growth through
                     impactful teachings, dynamic worship, and powerful prayers. Connect with a vibrant community and
@@ -130,13 +130,13 @@
     <section class="md:px-20 md:py-20 py-10 px-4 bg-[#f5f2f0]">
         <div class="text-center flex flex-col gap-4">
             <p class="condensed uppercase text-sm">upcoming sermons</p>
-            <h1 class="text-5xl uppercase font-bold">join us and become part of something great</h1>
+            <h1 class="text-3xl md:text-5xl uppercase font-bold">join us and become part of something great</h1>
         </div>
         <section class="splide" aria-label="sermon slider">
             <div class="relative splide__track md:py-32">
                 <ul class="splide__list md:min-h-screen min-h-[200px] flex cursor-grab">
                     <li class="splide__slide flex justify-center">
-                        <div class="flex items-center bg-[#fff5eb] ">
+                        <div class="flex md:flex-row flex-col md:items-center bg-[#fff5eb] ">
                             <div class="p-16 flex flex-col gap-2">
                                 <p class="font-semibold text-[#DC9853] text-xs uppercase">higher ground assembly</p>
                                 <h2 class="md:w-[100px] font-bold text-2xl">SEED OF GREATNESS</h2>
@@ -159,7 +159,7 @@
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="flex items-center bg-[#fff5eb] ">
+                        <div class="flex md:flex-row flex-col md:items-center bg-[#fff5eb] ">
                             <div class="p-16 flex flex-col gap-2">
                                 <p class="font-semibold text-[#DC9853] text-xs uppercase">higher ground assembly</p>
                                 <h2 class="md:w-[100px] font-bold text-2xl">SEED OF GREATNESS</h2>
@@ -182,7 +182,7 @@
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="flex items-center bg-[#fff5eb] ">
+                        <div class="flex md:flex-row flex-col md:items-center bg-[#fff5eb] ">
                             <div class="p-16 flex flex-col gap-2">
                                 <p class="font-semibold text-[#DC9853] text-xs uppercase">higher ground assembly</p>
                                 <h2 class="md:w-[100px] font-bold text-2xl">SEED OF GREATNESS</h2>
@@ -219,7 +219,7 @@
         </section>
     </section>
 
-    <section>
+    <section class="bg-white">
         <div class="text-center bg-primary py-4">
             <h1 class="font-bold text-3xl md:text-5xl text-white">MINISTERS</h1>
         </div>
@@ -243,7 +243,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="bg-white">
         <div class="text-center bg-primary py-4">
             <h1 class="font-bold text-3xl md:text-5xl text-white">WORSHIP MINISTERS</h1>
         </div>
@@ -273,6 +273,17 @@
             </div>
         </div>
     </section>
+
+    <section class="contact-section">
+        <div class="md:px-20 px-4 md:py-28 py-48 flex flex-col gap-2 z-10 relative">
+            <p class="text-xs text-[#DC9853]">CONTACT</p>
+            <h1 class="uppercase text-3xl md:text-5xl font-bold text-white md:w-[500px] w-full">Get in touch with our CHURCH</h1>
+        </div>
+    </section>
+
+    <section>
+        
+    </section>
     
 
     <script>
@@ -284,7 +295,7 @@
                 speed: 700,
                 autoplay: true,
                 pagination: false,
-                arrows: false
+                // arrows: false
             });
             splide.mount();
         });

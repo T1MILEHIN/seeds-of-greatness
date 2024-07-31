@@ -23,3 +23,17 @@ section.landing::after {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.568);
 }
+
+.contact-section {
+  position: relative;
+  background-image: url(../assets/images/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-section::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #250724bb;
+}
