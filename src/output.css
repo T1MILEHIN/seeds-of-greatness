@@ -863,6 +863,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -901,6 +906,11 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pl-2{
@@ -1028,6 +1038,7 @@ section.landing {
   position: relative;
   background-image: url(../assets/images/bg-image.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 section.landing::after {
