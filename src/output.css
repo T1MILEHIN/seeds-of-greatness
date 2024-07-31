@@ -1029,8 +1029,8 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  overflow-x: hidden;
+section, div, form {
+  overflow: hidden;
 }
 
 .condensed {
@@ -1147,8 +1147,8 @@ section.landing::after {
     width: 100px;
   }
 
-  .md\:w-\[300px\]{
-    width: 300px;
+  .md\:w-\[350px\]{
+    width: 350px;
   }
 
   .md\:w-\[500px\]{

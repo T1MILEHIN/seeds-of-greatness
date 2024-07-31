@@ -11,9 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
-section {
-  overflow-x: hidden;
+section, div, form {
+  overflow: hidden;
 }
 
 .condensed {
