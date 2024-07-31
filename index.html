@@ -4,31 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seed of Greatness</title>
+    <script src="https://kit.fontawesome.com/0a85dbbf01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <header class="bg-black">
-        <div>
-            <div>
-                <img src="./assets/images/logoflyer.png" alt="" class="w-28">
+    <header class="fixed w-full top-0 right-0 left-0 z-40 bg-black md:px-20 px-4 py-4">
+        <div class="flex items-center justify-between">
+            <div class="flex-1 flex items-center">
+                <div class="flex-1 border-r border-white">
+                    <img src="./assets/images/logo.png" alt="" class="w-28">
+                </div>
+                <div class="flex-[2] flex justify-center">
+                    <nav>
+                        <ul class="flex text-sm items-center gap-4 text-white font-semibold">
+                            <li>HOME</li>
+                            <li>ABOUT US</li>
+                            <li>SERMON</li>
+                            <li>BLOG</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <nav>
-                    <ul class="flex items-center gap-10 text-white font-bold">
-                        <li>HOME</li>
-                        <li>ABOUT US</li>
-                        <li>SERMON</li>
-                        <li>BLOG</li>
-                    </ul>
-                </nav>
+            <div class="flex-1 flex justify-end">
+                <button class="md:px-4 py-2 px-3 bg-primary font-bold text-white rounded-md">Register Now</button>
             </div>
         </div>
-        <div></div>
-        <button></button>
     </header>
 
-    <section>
+    <section class="landing md:px-20 px-4 min-h-screen flex items-center">
+        <div class="z-10 flex flex-col gap-4">
+            <div class="flex flex-col gap-6 text-white">
+                <p class="condensed text-base">Welcome to Our Church</p>
+                <h1 class="font-bold md:text-6xl md:w-[300px]">SEEDS OF GREATNESS</h1>
+                <button class="w-fit text-primary bg-white md:px-16 py-6 px-3 rounded-xl font-semibold">REGISTER NOW</button>
+            </div>
+            <p class="condensed text-white">Possibility Power Conference 2024</p>
+        </div>
+    </section>
+    <section class="md:pt-20 md:pb-10 py-16 flex justify-center">
+        <div class="flex flex-col items-center gap-16">
+            <div class="flex justify-between items-center bg-[#ece9e9] md:w-[400px] p-6 rounded-2xl border">
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="text-3xl font-light text-primary">001</h1>
+                    <p class="font-light text-sm text-primary">day</p>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="text-3xl font-light text-primary">00</h1>
+                    <p class="font-light text-sm text-primary">hr</p>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="text-3xl font-light text-primary">00</h1>
+                    <p class="font-light text-sm text-primary">min</p>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="text-3xl font-light text-primary">00</h1>
+                    <p class="font-light text-sm text-primary">sec</p>
+                </div>
+            </div>
 
+            <div class="text-center text-primary text-2xl">
+                <p class="font-medium">See Minister</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="md:py-20 py-10">
+        <div class="text-center flex flex-col gap-4">
+            <p class="condensed">sub-headline</p>
+            <h1 class="text-5xl uppercase font-bold">a church that's relevant</h1>
+        </div>
+        <div class="flex flex-col gap-4 px-10 py-5 bg-[#fdebff] border-b-[10px] border-primary">
+            <div>
+                <div class="fa-solid fa-user"></i>
+            </div>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
     </section>
 </body>
 </html>
