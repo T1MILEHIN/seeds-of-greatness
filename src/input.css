@@ -35,6 +35,23 @@ section.landing::after {
   background-color: rgba(0, 0, 0, 0.568);
 }
 
+.landing-left-after {
+  position: relative;
+  padding-left: 16px;
+}
+
+.landing-left-after:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 5px;
+  background-color: #DC9853;
+  border-radius: 4px;
+}
+
 .contact-section {
   position: relative;
   background-image: url(../assets/images/contact-bg.jpg);

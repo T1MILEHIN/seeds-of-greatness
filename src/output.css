@@ -848,6 +848,11 @@ video {
   padding: 1.5rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -863,9 +868,9 @@ video {
   padding-right: 1rem;
 }
 
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-10{
@@ -906,11 +911,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pl-2{
@@ -1046,6 +1046,23 @@ section.landing::after {
   content: "";
   inset: 0;
   background-color: rgba(0, 0, 0, 0.568);
+}
+
+.landing-left-after {
+  position: relative;
+  padding-left: 16px;
+}
+
+.landing-left-after:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 5px;
+  background-color: #DC9853;
+  border-radius: 4px;
 }
 
 .contact-section {
