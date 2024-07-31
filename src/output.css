@@ -1029,9 +1029,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+section {
   overflow-x: hidden;
-  /* width: 100vw; */
 }
 
 .condensed {
