@@ -655,6 +655,10 @@ video {
   width: 5rem;
 }
 
+.w-\[100px\]{
+  width: 100px;
+}
+
 .w-\[80vw\]{
   width: 80vw;
 }
@@ -666,10 +670,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[100px\]{
-  width: 100px;
 }
 
 .flex-1{
@@ -748,10 +748,6 @@ video {
   gap: 2rem;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -781,14 +777,14 @@ video {
   border-color: rgb(132 34 129 / var(--tw-border-opacity));
 }
 
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-slate-500{
   --tw-border-opacity: 1;
   border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#d4b2d3\]{
@@ -831,13 +827,13 @@ video {
   background-color: rgb(132 34 129 / var(--tw-bg-opacity));
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-transparent{
-  background-color: transparent;
 }
 
 .p-16{
@@ -882,6 +878,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -900,11 +901,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pl-2{
@@ -1007,8 +1003,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .condensed {
@@ -1101,10 +1105,6 @@ section.landing::after {
     width: 300px;
   }
 
-  .md\:w-\[400px\]{
-    width: 400px;
-  }
-
   .md\:w-\[500px\]{
     width: 500px;
   }
@@ -1133,16 +1133,8 @@ section.landing::after {
     align-items: center;
   }
 
-  .md\:gap-20{
-    gap: 5rem;
-  }
-
   .md\:gap-6{
     gap: 1.5rem;
-  }
-
-  .md\:gap-10{
-    gap: 2.5rem;
   }
 
   .md\:border-r{
