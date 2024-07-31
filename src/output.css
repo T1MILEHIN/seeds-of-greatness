@@ -1017,6 +1017,7 @@ html {
 
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 .condensed {
@@ -1153,11 +1154,6 @@ section.landing::after {
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .md\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .md\:px-6{
