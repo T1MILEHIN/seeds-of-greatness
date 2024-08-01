@@ -647,10 +647,6 @@ video {
   min-height: 200px;
 }
 
-.min-h-screen{
-  min-height: 100vh;
-}
-
 .w-20{
   width: 5rem;
 }
@@ -670,6 +666,14 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[200px\]{
+  width: 200px;
 }
 
 .flex-1{
@@ -888,6 +892,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -911,6 +920,21 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pl-2{
@@ -1044,8 +1068,16 @@ section, div, form {
 section.landing {
   position: relative;
   background-image: url(../assets/images/bg-image.jpg);
-  background-size: cover;
+  background-size: 200%;
+  background-repeat: no-repeat;
   background-position: center;
+}
+
+@media only screen and (min-width:768px){
+  section.landing {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 section.landing::after {
@@ -1216,6 +1248,11 @@ section.landing::after {
     padding-right: 2rem;
   }
 
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1244,6 +1281,11 @@ section.landing::after {
   .md\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pb-10{
