@@ -6,7 +6,7 @@ const secEL = document.querySelector(".sec");
 
 document.addEventListener('DOMContentLoaded', function () {
     function countDown() {
-        const futureDate = new Date("11 august 2024");
+        const futureDate = new Date("11 december 2024");
         const presentDate = new Date();
 
         const diff = futureDate - presentDate;
